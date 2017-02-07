@@ -1,6 +1,6 @@
 # Tomcat File and Directory Architecture
 
-- Let us know about the directories in CATALINA_HOME
+*Let us know about the directories in ***CATALINA_HOME*** directory*
 
 - ***bin*** In this directory we have all our control scripts / programs / executables of our tomcat application
 
