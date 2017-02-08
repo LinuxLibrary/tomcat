@@ -4,7 +4,7 @@
 - For this we need to edit the ***conf/tomcat-users.xml*** 
 - At the bottom of this file we can find some roles and user accounts
 - Let us add some new roles and users now
-	- Adding ***manager, manager-gui, admin-gui*** roles
+	- Adding ***tomcat,manager, manager-gui, admin-gui*** roles
 	
 	```
 	<role rolename="tomcat"/>
