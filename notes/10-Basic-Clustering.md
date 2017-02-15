@@ -44,3 +44,18 @@ CATALINA_HOME2=/opt/tomcat8-n2
 CATALINA_TMPDIR2=/opt/tomcat8-n2/temp
 ```
 
+- Now we need to edit ***/etc/nginx/vhost.d/default.conf*** file to add the ***upstream*** directive to loadbalance
+- Edit that file and add the following at the top of the file
+
+```
+upstream myTomcat {
+	server localhost:8080;
+	server localhost:8081;
+}
+```
+
+- Now we need to change the proxy_pass
+
+```
+proxy_pass http://myTomcat;
+```
