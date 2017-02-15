@@ -30,34 +30,6 @@
 - Now lets go to the ***vhost.d*** directory and create a new config file
 	- Copy the sample server definition after deleting the existing server definition in the main config file
 	- Paste it in the new config file and modify as per your requirements
-	- Else use the below
-
-	```
-	server {
-        	listen 80;
-
-        	root /opt/tomcat8/webapps/hello/;
-        	index index.php index.html index.htm;
-
-        	server_name localhost;
-
-        	location / {
-                	try_files $uri $uri/ /index.php;
-        	}
-
-        	location ~ \.php$ {
-        	        proxy_set_header X-Real-IP $remote_addr;
-        	        proxy_set_header X-Forwarded-For $remote_addr;
-        	        proxy_set_header Host $host;
-        	        proxy_pass http://127.0.0.1:8080;
-        	}
-	
-	        location ~ /\.ht {
-	                deny all;
-	        }
-	}
-
-	```
 
 ```
 # cd vhost.d/
@@ -72,7 +44,7 @@ server {
 	server_name localhost;
 
 	location / {
-		try_files $uri $uri/ /index.php;
+		try_files $uri $uri/ /index.html;
 	}
 
 	location ~ \.php$ {
