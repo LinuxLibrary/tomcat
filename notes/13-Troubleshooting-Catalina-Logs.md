@@ -1,7 +1,7 @@
 # Troubleshooting Tomcat using Catalina log
 
 - We can get the ***catalina*** logs in ***$CATALINA_HOME/logs***
-- Here we'll have a ***catalina.out
+- Here we'll have a ***catalina.out***
 - We can see some huge info in that log file. If we want to what exactly happens since the start of tomcat then we need to log that into a new file.
 - By default we have log rotation enabled on this logs.
 - For now let us stop tomcat and nullify the catalina.out file and then start tomcat to have some new info in the catalina.out
@@ -84,7 +84,8 @@
 	- Here we need to see the below lines
 
 	```
-	org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8010]]
+	org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector
+        [AJP/1.3-8010]]
 	Caused by: java.net.BindException: Address already in use
 	```
 	
