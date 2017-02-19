@@ -57,4 +57,23 @@ JRE_HOME=/opt/jdk8/jre
 ```
 
 - Now we need to change the configs to change the ports as we know each instance should have some distinct ports to listen on.
+
+```
+[TOMCAT1]
+
+Shutdown Port	->      7005
+Web Port	->      7080
+Redirect Port	->      7443
+AJP Conn. Port	->      7009
+```
+
+```
+[TOMCAT2]
+
+Shutdown Port   ->      8005
+Web Port        ->      8080
+Redirect Port   ->      8443
+AJP Conn. Port  ->      8009
+```
+
 - Please refer to [Basic Clustering](10-Basic-Clustering.md) to know how to change the ports also to know how can these tomcat instances be run in a clustered environment to balance the load
