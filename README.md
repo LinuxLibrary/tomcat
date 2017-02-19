@@ -1,3 +1,5 @@
+![Tomcat Logo](/images/apache-tomcat.png)
+
 # Apache Tomcat Administration
 
 Apache Tomcat, often referred to as Tomcat Server, is an open-source Java Servlet Container developed by the Apache Software Foundation (ASF). Tomcat implements several Java EE specifications including Java Servlet, JavaServer Pages (JSP), Java EL, and WebSocket, and provides a "pure Java" HTTP web server environment in which Java code can run.
