@@ -62,7 +62,7 @@ JRE_HOME=/opt/jdk8/jre
 [TOMCAT1]
 
 Shutdown Port	->      7005
-Web Port	->      7080
+Web Port		->      7080
 Redirect Port	->      7443
 AJP Conn. Port	->      7009
 ```
