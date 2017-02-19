@@ -46,7 +46,9 @@ JRE_HOME=/opt/jdk8/jre
 # chmod g+rwx conf/
 # chmod g+r conf/*
 # chown -R tomcat work/ temp/ logs/
+```
 
+```
 # cd tomcat2/
 # chgrp -R tomcat conf
 # chmod g+rwx conf/
