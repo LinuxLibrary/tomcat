@@ -55,4 +55,4 @@ JRE_HOME=/opt/jdk8/jre
 ```
 
 - Now we need to change the configs to change the ports as we know each instance should have some distinct ports to listen on.
-- Please refer to [Basic Clustering](10-Basic-Clustering.md)
+- Please refer to [Basic Clustering](10-Basic-Clustering.md) to know how to change the ports also to know how can these tomcat instances be run in a clustered environment to balance the load
